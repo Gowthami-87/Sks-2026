@@ -1,0 +1,38 @@
+Amazon Cognito - It is a Authentication Service /we can integrate the application in any where
+cloud - develop
+authentication -username , password -->Application interface
+
+authentication --(It authenticating you as genuine user / basic username & password)
+authorization -- decides which services we can access
+auditing -- accounting / what we have done in that time -AAA
+
+person -(authenticated) --has a authorization for ec2 instance -- 
+
+
+Cognito
+--create user pool
+--default --Cognito user pool
+--select any of 3 -- username, email ,phone number
+--next
+--password policy mode --select Cognito defaults
+--go for no MFA
+--user account recovery --default
+--next
+--Attributes --select any
+--next
+--email provider --select send email with Cognito
+--next
+--give a pool name
+--select the use the Cognito Hosted UI
+--Cognito domain --give a name --https://my-pooll
+--App client name --give any name (my-Cognito)
+--in URL --https://localhost
+--next --create user pool
+
+to authenticate into any of my application i am creating authentication page using Amazon Cognito
+
+amazon Cognito hosted ui --click the 3rd link
+
+https://my-pooll.auth.us-east-1.amazoncognito.com/oauth2/authorize?response_type=code&client_id=4h0n738md12v4eh228c3hgb09l&redirect_uri=https://localhost
+
+
